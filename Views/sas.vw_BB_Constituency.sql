@@ -1,0 +1,16 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [sas].[vw_BB_Constituency]
+AS
+SELECT  ID AS ConstituencyID ,
+        CAST(ConstituentID AS NVARCHAR(100)) ConstituentID ,
+        CONSTITUENCY ,
+        CAST(DATEFROM AS DATE) StartDate ,
+        CAST(DATETO AS DATE) EndDate ,
+        CAST(ISCURRENTCONSTITUENCY AS INT) AS IsCurrentConstituency
+FROM    ods.BB_CONSTITUENCIES (NOLOCK)
+
+GO

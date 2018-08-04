@@ -1,0 +1,2 @@
+CREATE USER [ssb_dhorstman] WITHOUT LOGIN
+GO

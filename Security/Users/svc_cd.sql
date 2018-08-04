@@ -1,0 +1,2 @@
+CREATE USER [svc_cd] WITHOUT LOGIN
+GO

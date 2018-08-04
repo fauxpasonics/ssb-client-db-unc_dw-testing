@@ -1,0 +1,2 @@
+CREATE USER [ssb_ameitin] WITHOUT LOGIN
+GO

@@ -1,0 +1,2 @@
+CREATE USER [ssb_psoicher] WITHOUT LOGIN
+GO

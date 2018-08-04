@@ -1,0 +1,3 @@
+CREATE USER [svc_sasVAreadonly] WITHOUT LOGIN
+GO
+GRANT VIEW DEFINITION TO [svc_sasVAreadonly]

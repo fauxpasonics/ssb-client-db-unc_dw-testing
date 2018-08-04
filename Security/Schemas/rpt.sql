@@ -1,0 +1,5 @@
+CREATE SCHEMA [rpt]
+AUTHORIZATION [dbo]
+GO
+GRANT SELECT ON SCHEMA:: [rpt] TO [svc_sasVAreadonly]
+GO

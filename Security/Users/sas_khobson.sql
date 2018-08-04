@@ -1,0 +1,2 @@
+CREATE USER [sas_khobson] WITHOUT LOGIN
+GO

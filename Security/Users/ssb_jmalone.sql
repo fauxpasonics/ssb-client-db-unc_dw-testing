@@ -1,0 +1,2 @@
+CREATE USER [ssb_jmalone] WITHOUT LOGIN
+GO

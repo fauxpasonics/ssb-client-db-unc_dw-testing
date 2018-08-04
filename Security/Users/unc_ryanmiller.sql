@@ -1,0 +1,2 @@
+CREATE USER [unc_ryanmiller] WITHOUT LOGIN
+GO

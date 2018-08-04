@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[Emails]
+(
+[LOOKUPID] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[EMAILTYPE] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[EMAILADDRESS] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[ISPRIMARY] [bit] NOT NULL,
+[DATEADDED] [datetime] NOT NULL,
+[DATECHANGED] [datetime] NOT NULL,
+[DONOTEMAIL] [bit] NOT NULL,
+[STARTDATE] [date] NULL,
+[ENDDATE] [date] NULL
+)
+GO

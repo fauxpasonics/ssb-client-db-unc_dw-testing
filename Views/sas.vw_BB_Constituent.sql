@@ -1,0 +1,49 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [sas].[vw_BB_Constituent]
+AS
+SELECT  ID ConstituentID,
+        LOOKUPID ,
+        CAST(ISINACTIVE AS INT) AS IsInactive ,
+        CAST(DONOTMAIL AS INT) AS DoNotMail ,
+        CAST(DONOTEMAIL AS INT) AS DoNotEmail ,
+        CAST(DONOTPHONE AS INT) AS DoNotPhone ,
+        CAST(ISCONSTITUENT AS INT) AS IsConstituent ,
+        CAST(ISORGANIZATION AS INT) AS IsOrganization ,
+        CAST(ISGROUP AS INT) AS IsGroup ,
+        CAST(ISINDIVIDUAL AS INT) AS IsIndividual ,
+        CAST(ISCONFIDENTIAL AS INT) AS IsConfidential ,
+        CAST(GIVESANONYMOUSLY AS INT) AS GivesAnonymously ,
+        GENDER ,
+        CAREERCODE1 ,
+        CAREERCODE2 ,
+        CAREERCODE3 ,
+        CAST(BIRTHDATE AS DATE) Birthdate ,
+        CAST(DECEASEDCONFIRMATIONCODE AS INT) AS IsDeceased ,
+        DECEASEDCONFIRMATION ,
+        CAST(DECEASEDATE AS DATE) DeceasedDate ,
+        PRIMARY_EMPLOYER PrimaryEmployer ,
+        PRIMARY_JOBTITLE PrimaryJobTitle ,
+        CAST(ISRETIRED AS INT) AS IsRetired ,
+        CAST(ISSELFEMPLOYED AS INT) AS IsSelfEmployed ,
+        PRIMARYCONSTITUENCY ,
+        TITLE ,
+        FIRSTNAME ,
+        MIDDLENAME ,
+        LASTNAME ,
+        SUFFIX ,
+        [NAME] FullName ,
+        INDIVIDUALINFORMALADDRESSEE ,
+        INDIVIDUALFORMALSALUTATION ,
+        INDIVIDUALFORMALADDRESSEE ,
+        NICKNAME ,
+        GOESBY,
+		RATING_CODE,
+		RATING_DESC
+FROM    ods.BB_CONSTITUENT (NOLOCK)
+WHERE CAST(ISINACTIVE AS INT) = 0
+
+GO

@@ -1,0 +1,2 @@
+CREATE USER [ssb_ssales] WITHOUT LOGIN
+GO

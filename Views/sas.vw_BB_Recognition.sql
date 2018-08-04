@@ -1,0 +1,19 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+--Blackbaud Recognition
+CREATE VIEW [sas].[vw_BB_Recognition]
+AS
+SELECT  ID AS RecognitionID ,
+        FINANCIALTRANSACTIONLINEITEMID ,
+        RECOGNITIONAMOUNT ,
+        CAST(ConstituentID AS NVARCHAR(100)) ConstituentID ,
+        CREDITTYPE ,
+        RECOGNITIONDATE ,
+        DATEADDED ,
+        DATECHANGED AS DateUpdated
+FROM    ods.BB_RECOGNITION  (NOLOCK)
+
+GO

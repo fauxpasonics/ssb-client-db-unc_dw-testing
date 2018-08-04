@@ -1,0 +1,16 @@
+CREATE TABLE [ods].[BB_Recognition_stg]
+(
+[ETL_ID] [int] NOT NULL IDENTITY(1, 1),
+[ETL_CreatedDate] [datetime] NOT NULL,
+[ID] [uniqueidentifier] NOT NULL,
+[FINANCIALTRANSACTIONLINEITEMID] [uniqueidentifier] NULL,
+[RECOGNITIONAMOUNT] [money] NULL,
+[CONSTITUENTID] [uniqueidentifier] NULL,
+[CREDITTYPE] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RECOGNITIONDATE] [date] NULL,
+[DATEADDED] [date] NULL,
+[DATECHANGED] [date] NULL
+)
+GO
+ALTER TABLE [ods].[BB_Recognition_stg] ADD CONSTRAINT [PK__BB_Recog__3214EC277E01993F] PRIMARY KEY CLUSTERED  ([ID])
+GO

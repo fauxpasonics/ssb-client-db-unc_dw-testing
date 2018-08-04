@@ -1,0 +1,41 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [sas].[vw_BB_Revenue]
+AS
+SELECT  ID AS ID ,
+        FINANCIALTRANSACTIONID ,
+        REVENUEID ,
+        TRANSACTIONTYPECODE ,
+        APPLICATIONCODE ,
+        [APPLICATION] ,
+        APPLICATIONTYPECODE ,
+        APPLICATIONTYPE ,
+        PAYMENTMETHOD ,
+        TRANSACTIONAMOUNT ,
+        RECEIPTAMOUNT ,
+        [ANONYMOUS] ,
+        ANONYMOUS_TRANSACTION AS AnonymousTransaction ,
+        ANONYMOUS_DONOR AS AnonymousDonor ,
+        SITEID ,
+        DESIGNATIONID ,
+        CONSTITUENTID ,
+        TRANSACTIONDATE ,
+        POSTDATE ,
+        APPEAL ,
+        SOURCECODE ,
+        CHANNEL ,
+        REFERENCE ,
+        BATCHNUMBER ,
+        REVENUECATEGORYNAME ,
+        GIFTINKINDSUBTYPECODE ,
+        MEDIANPRICE ,
+        NUMBEROFUNITS ,
+        SYMBOL ,
+        DATEADDED ,
+        DATECHANGED AS DateUpdated
+FROM    ods.BB_REVENUE   (NOLOCK)
+
+GO

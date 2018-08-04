@@ -1,0 +1,14 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [sas].[vw_BB_Site]
+AS
+SELECT  ID AS ID ,
+        SITEID ,
+        [NAME] SiteName ,
+        SHORTNAME
+FROM    ods.BB_SITES (NOLOCK)
+
+GO

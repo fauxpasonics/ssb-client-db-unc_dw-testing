@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [sas].[vw_DimCustomerSSBID]
+AS
+
+SELECT *
+FROM dbo.dimcustomerssbid (NOLOCK)
+GO

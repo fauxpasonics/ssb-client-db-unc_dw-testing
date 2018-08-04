@@ -1,0 +1,3 @@
+CREATE USER [sas_rmarla] WITHOUT LOGIN
+GO
+GRANT SHOWPLAN TO [sas_rmarla]

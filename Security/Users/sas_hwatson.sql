@@ -1,0 +1,2 @@
+CREATE USER [sas_hwatson] WITHOUT LOGIN
+GO

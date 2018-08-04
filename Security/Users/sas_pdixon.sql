@@ -1,0 +1,2 @@
+CREATE USER [sas_pdixon] WITHOUT LOGIN
+GO

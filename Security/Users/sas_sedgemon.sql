@@ -1,0 +1,2 @@
+CREATE USER [sas_sedgemon] WITHOUT LOGIN
+GO

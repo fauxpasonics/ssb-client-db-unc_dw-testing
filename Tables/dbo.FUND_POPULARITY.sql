@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[FUND_POPULARITY]
+(
+[DESIGNATION] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CNT] [int] NULL
+)
+GO

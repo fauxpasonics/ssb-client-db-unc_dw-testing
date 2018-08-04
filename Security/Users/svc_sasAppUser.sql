@@ -1,0 +1,2 @@
+CREATE USER [svc_sasAppUser] WITHOUT LOGIN
+GO

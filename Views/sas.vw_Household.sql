@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [sas].[vw_Household]
+AS
+SELECT HouseholdID, MAX(HOUSEHOLDLOOKUPID) AS HouseholdLookupID
+FROM ods.BB_Household with (nolock) 
+GROUP BY HOUSEHOLDID
+GO

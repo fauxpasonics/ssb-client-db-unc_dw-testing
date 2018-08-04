@@ -1,0 +1,2 @@
+CREATE USER [ssb_bsmith] WITHOUT LOGIN
+GO

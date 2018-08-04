@@ -1,0 +1,18 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+--Blackbaud Special Code
+CREATE VIEW [sas].[vw_BB_SpecialCode]
+AS
+SELECT  ID AS SpecialCodeID ,
+        SPECIALCODE ,
+        [DESCRIPTION] ,
+        CATEGORY ,
+        RESPONSIBLEOFFICE ,
+        CAST(EXPIRATIONDATE AS DATE) ExpirationDate ,
+        CAST(DATEADDED AS DATE) DateAdded ,
+        CAST(DATECHANGED AS DATE) DateUpdated
+FROM    ods.BB_SPECIALCODES (NOLOCK)
+GO

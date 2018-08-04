@@ -1,0 +1,2 @@
+CREATE USER [ssb_ksniffin] WITHOUT LOGIN
+GO

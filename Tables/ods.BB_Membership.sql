@@ -1,0 +1,19 @@
+CREATE TABLE [ods].[BB_Membership]
+(
+[ETL_ID] [int] NOT NULL IDENTITY(1, 1),
+[ETL_CreatedDate] [datetime] NOT NULL,
+[ID] [uniqueidentifier] NOT NULL,
+[CONSTITUENTID] [uniqueidentifier] NULL,
+[ISPRIMARY] [bit] NULL,
+[ISDROPPED] [bit] NULL,
+[ISCAREGIVER] [bit] NULL,
+[MEMBERSHIP_PROGRAM] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MEMBERSHIP_LEVEL] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[JOINDATE] [date] NULL,
+[EXPIRATIONDATE] [date] NULL,
+[STATUS] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[GAALIFETIMEMEMBERID] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
+ALTER TABLE [ods].[BB_Membership] ADD CONSTRAINT [PK__BB_Membe__3214EC2741BA65B2] PRIMARY KEY CLUSTERED  ([ID])
+GO

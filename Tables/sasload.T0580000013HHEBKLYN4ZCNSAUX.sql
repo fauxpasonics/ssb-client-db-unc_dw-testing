@@ -1,0 +1,5 @@
+CREATE TABLE [sasload].[T0580000013HHEBKLYN4ZCNSAUX]
+(
+[a] [numeric] (10, 0) NULL
+)
+GO

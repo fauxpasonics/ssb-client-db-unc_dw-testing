@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[SSB-SAAS_Data_Transfer_CONTACT__201710160109]
+(
+[Member ID] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Chapter Name] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[District Abbr] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Name] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Salutation] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[First Name] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Middle Init] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Last Name] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Name Suffix] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Spouse Name] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Spouse Title] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Email Address] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Home Phone] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Business Phone] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bus  Ext] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Cell Phone] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Fax] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bill Address1] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bill Address2] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bill City] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bill State Prov] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bill Zip Code] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Bill Country] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Name Phone Email Mod Date] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Most Recent Contact Change Date] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Donor Status Mod Date] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SourceFileName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
